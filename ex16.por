@@ -1,37 +1,23 @@
 programa
 {
-
 	funcao inicio()
 	{
-		inteiro n1, n2, n3, menor
+		inteiro valor_compra, valor_pagamento
+	
+		escreva("Qual o valor da compra: R$")
+		leia(valor_compra)
+		escreva("Qual o valor do pagamento: R$")
+		leia(valor_pagamento)
 
-		escreva("Escreva o número 1: ")
-		leia(n1)
-		escreva("Escreva o número 2: ")
-		leia(n2)
-		escreva("Escreva o número 3: ")
-		leia(n3)
-
-		menor= n1
-		se (n2 < n1 e n2 < n3){
-			menor= n2
-		}senao{
-			se(n3 < n2 e n3 < n1){
-				menor= n3
-			}
-		}
-		escreva("O menor é: ", menor)
+		
 	}
-
-	
-	
 }
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 301; 
+ * @POSICAO-CURSOR = 208; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

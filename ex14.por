@@ -3,24 +3,24 @@ programa
 	
 	funcao inicio()
 	{
-		real nota1, nota2, nota3, res1,res2,res3, resultado
+		cadeia municipio
+		real n_eleitores, mais_votado, porcentagem
 		
-		escreva("escreva a nota de peso2: ")
-          leia(nota1)
 		
-		escreva("escreva a nota de peso3: ")
-          leia(nota2)
-          
-		escreva("escreva a nota de peso5: ")
-          leia(nota3)
+		escreva("Qual o nome do município: ")
+		leia(municipio)
+		escreva("Qual o número de eleitores: ")
+		leia(n_eleitores)
+		escreva("Qual o número de votos do candidato mais votado: ")
+		leia(mais_votado)
 
-          res1= nota1 * 2
-          res2= nota2 * 3
-          res3= nota3 * 5
+		porcentagem= mais_votado / n_eleitores * 100
+		se (n_eleitores > 200000 e porcentagem < 50){
+			escreva("Terá segundo turno!")
+		}senao{
+			escreva("Não terá segundo turno!")
+		}
 
-          resultado = (res1+res2+res3)/(2+3+5)
-          escreva("a média final é ", resultado)
-          
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -28,7 +28,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 455; 
+ * @POSICAO-CURSOR = 494; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
